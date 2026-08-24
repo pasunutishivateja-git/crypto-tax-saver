@@ -21,9 +21,9 @@ export function HoldingsTable() {
             Select the positions you want to harvest.
           </p>
         </div>
-        <span className="shrink-0 rounded-full bg-muted px-3 py-1 text-xs font-semibold">
-          {selected.size} selected
-        </span>
+       <span className="shrink-0 rounded-full bg-[#232936] text-slate-300 px-3 py-1 text-xs font-semibold">
+  {selected.size} selected
+</span>
       </header>
 
       <div className="mt-4 -mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0">
