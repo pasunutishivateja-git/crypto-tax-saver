@@ -29,7 +29,8 @@ export function HoldingsTable() {
       <div className="mt-4 -mx-4 overflow-x-auto px-4 sm:mx-0 sm:px-0">
         <table className="w-full min-w-full border-collapse sm:min-w-[900px]">
           <thead className="hidden sm:table-header-group">
-            <tr className="border-b border-border text-xs uppercase tracking-wider text-muted-foreground">
+            {/* Replaced text-muted-foreground with text-slate-100 to brighten headings */}
+            <tr className="border-b border-border text-xs uppercase tracking-wider text-slate-100">
               <th className="px-4 py-3 text-left font-semibold">
                 <SelectAllCheckbox
                   checked={allSelected}

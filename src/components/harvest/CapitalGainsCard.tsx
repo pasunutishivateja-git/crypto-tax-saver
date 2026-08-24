@@ -30,7 +30,8 @@ export function CapitalGainsCard({ title, variant, data, savings = 0 }: Props) {
 
       <div className="mt-5 grid gap-6 sm:grid-cols-2">
         <div>
-          <h3 className="text-xs font-semibold uppercase tracking-widest opacity-60">
+          {/* Removed opacity-60 to make it perfectly bright */}
+          <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-100">
             Short-term
           </h3>
           <div className="mt-2 divide-y divide-[color-mix(in_oklab,currentColor_15%,transparent)]">
@@ -40,7 +41,8 @@ export function CapitalGainsCard({ title, variant, data, savings = 0 }: Props) {
           </div>
         </div>
         <div>
-          <h3 className="text-xs font-semibold uppercase tracking-widest opacity-60">
+          {/* Removed opacity-60 to make it perfectly bright */}
+          <h3 className="text-xs font-semibold uppercase tracking-widest text-slate-100">
             Long-term
           </h3>
           <div className="mt-2 divide-y divide-[color-mix(in_oklab,currentColor_15%,transparent)]">
@@ -52,7 +54,7 @@ export function CapitalGainsCard({ title, variant, data, savings = 0 }: Props) {
       </div>
 
       <div className="mt-6 border-t border-[color-mix(in_oklab,currentColor_20%,transparent)] pt-4">
-        <p className="text-sm opacity-70">Realised Capital Gains</p>
+        <p className="text-sm opacity-90">Realised Capital Gains</p>
         <p className="mt-1 font-mono text-3xl font-bold tabular-nums sm:text-4xl">
           {formatINR(data.realised, 0)}
         </p>
